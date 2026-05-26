@@ -1,12 +1,12 @@
 # 在吗
 
-> 一个中文生存签到应用。
+> 一个中文生存签到应用，灵感来自「死了么」。
 
 每天按时签到「我在」，确认你还好好的。超时未签到，自动通知紧急联系人。
 
 ## 📥 下载安装
 
-[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.1-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.1/ZaiMa-v1.0.1-release.apk)
+[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.0-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.0/ZaiMa-release.apk)
 
 > Android 7.0+ | 48MB | 无需连接开发服务器
 
