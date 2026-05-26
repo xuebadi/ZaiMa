@@ -1,79 +1,99 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 在吗
 
-# Getting Started
+> 一个中文生存签到应用，灵感来自「死了么」。
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+每天按时签到「我在」，确认你还好好的。超时未签到，自动通知紧急联系人。
 
-## Step 1: Start the Metro Server
+## ✨ 功能
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- 🏠 **每日签到** — 一键点击「我在」确认生存状态
+- ⏰ **签到倒计时** — 实时显示距签到截止的剩余时间
+- 📋 **签到记录** — 完整的历史时间线，连续签到天数统计
+- ⚙️ **灵活设置** — 自定义签到截止时间、提前提醒分钟数
+- 📱 **紧急联系人** — 超时未签到时，自动发送短信通知紧急联系人
+- 🎨 **暗黑主题** — 全局深色UI，夜间使用更舒适
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 📸 界面预览
+
+| 首页 | 记录 | 设置 |
+|:---:|:---:|:---:|
+| 🏠 签到主界面 | 📋 历史时间线 | ⚙️ 个人配置 |
+
+## 🛠 技术栈
+
+| 技术 | 版本 | 用途 |
+|------|------|------|
+| React Native | 0.76.9 | 跨平台框架 |
+| TypeScript | 5.x | 类型安全 |
+| React Navigation | 6.x | 页面导航 |
+| AsyncStorage | 1.23.1 | 本地数据持久化 |
+| React Native Screens | 3.35.0 | 原生屏幕优化 |
+| Hermes | - | JS 引擎 |
+
+## 📦 构建
+
+### 环境要求
+
+- Node.js ≥ 18
+- JDK 17
+- Android SDK（compileSdk 35, minSdk 24）
+- Gradle 8.10.2
+
+### 克隆项目
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+git clone https://github.com/xuebadi/ZaiMa.git
+cd ZaiMa
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+### 安装依赖
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+npm install
 ```
 
-### For iOS
+### 构建 APK
 
 ```bash
-# using npm
-npm run ios
+# Debug 版本
+cd android && ./gradlew assembleDebug
 
-# OR using Yarn
-yarn ios
+# Release 版本（需配置签名）
+cd android && ./gradlew assembleRelease
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+构建产物位于 `android/app/build/outputs/apk/`
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## 📱 使用方法
 
-## Step 3: Modifying your App
+1. **首次打开** — 设置签到截止时间（默认每天 22:00）
+2. **添加紧急联系人** — 在设置页输入联系人姓名和手机号
+3. **每日签到** — 在截止时间前点击「我在」按钮
+4. **超时后果** — 超过截止时间未签到，系统将自动向紧急联系人发送短信
 
-Now that you have successfully run the app, let's modify it.
+## 📂 项目结构
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+```
+ZaiMa/
+├── App.tsx                    # 应用入口 & 导航配置
+├── src/
+│   ├── screens/
+│   │   ├── HomeScreen.tsx     # 签到主界面
+│   │   ├── HistoryScreen.tsx  # 签到历史
+│   │   └── SettingsScreen.tsx # 设置页
+│   └── utils/
+│       ├── storage.ts         # 本地存储工具
+│       └── notifications.ts   # 通知/提醒工具
+├── android/                   # Android 原生项目
+└── ios/                       # iOS 原生项目
+```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## ⚠️ 注意事项
 
-## Congratulations! :tada:
+- 当前为 **Debug 版本**，APK 体积较大（~106MB），Release 版本会显著缩小
+- 推送通知功能使用应用内 Alert 实现，如需系统级推送通知，可集成 `@notifee/react-native`
+- 紧急联系人短信通过系统短信应用发送，需要用户手动确认发送
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📄 许可证
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+MIT License
