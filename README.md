@@ -8,7 +8,7 @@
 
 ## 📥 下载安装
 
-[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.2-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.2/ZaiMa-v1.0.2-release.apk)
+[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.5-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.5/ZaiMa-v1.0.5.apk)
 
 > Android 7.0+ | 48MB | 无需连接开发服务器
 
@@ -18,7 +18,7 @@
 - ⏰ **签到倒计时** — 实时显示距签到截止的剩余时间
 - 📋 **签到记录** — 完整的历史时间线，连续签到天数统计
 - ⚙️ **灵活设置** — 自定义签到截止时间、提前提醒分钟数
-- 📱 **紧急联系人** — 超时未签到时，**自动发送短信**通知紧急联系人（无需手动确认）
+- 📱 **紧急联系人** — 超时未签到时，**自动发送短信**通知紧急联系人
 - 🎨 **暗黑主题** — 全局深色UI，夜间使用更舒适
 
 ## 📸 界面预览
