@@ -4,6 +4,12 @@
 
 每天按时签到「我在」，确认你还好好的。超时未签到，自动通知紧急联系人。
 
+## 📥 下载安装
+
+[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.0-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.0/ZaiMa-release.apk)
+
+> Android 7.0+ | 48MB | 无需连接开发服务器
+
 ## ✨ 功能
 
 - 🏠 **每日签到** — 一键点击「我在」确认生存状态
@@ -90,7 +96,7 @@ ZaiMa/
 
 ## ⚠️ 注意事项
 
-- 当前为 **Debug 版本**，APK 体积较大（~106MB），Release 版本会显著缩小
+- Release APK（48MB）已内置 JS Bundle，可独立运行，无需连接开发服务器
 - 推送通知功能使用应用内 Alert 实现，如需系统级推送通知，可集成 `@notifee/react-native`
 - 紧急联系人短信通过系统短信应用发送，需要用户手动确认发送
 
