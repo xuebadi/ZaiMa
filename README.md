@@ -1,4 +1,4 @@
-# 「在吗」 --中文「生存签到」应用。
+# 「在吗」 --中文「生存签到」应用
 
 <img width="200" height="200" alt="ZaiMa" src="https://github.com/user-attachments/assets/612b71d4-cfea-4c49-95bd-58a7b3243116" />
 
