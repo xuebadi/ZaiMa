@@ -1,5 +1,7 @@
 # 在吗
+
 <img width="200" height="200" alt="ZaiMa" src="https://github.com/user-attachments/assets/612b71d4-cfea-4c49-95bd-58a7b3243116" />
+
 > 一个中文生存签到应用，灵感来自「死了么」。
 
 每天按时签到「我在」，确认你还好好的。超时未签到，自动通知紧急联系人。
