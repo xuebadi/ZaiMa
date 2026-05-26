@@ -6,7 +6,7 @@
 
 ## 📥 下载安装
 
-[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.0-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.0/ZaiMa-release.apk)
+[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.2-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.2/ZaiMa-v1.0.2-release.apk)
 
 > Android 7.0+ | 48MB | 无需连接开发服务器
 
@@ -16,7 +16,7 @@
 - ⏰ **签到倒计时** — 实时显示距签到截止的剩余时间
 - 📋 **签到记录** — 完整的历史时间线，连续签到天数统计
 - ⚙️ **灵活设置** — 自定义签到截止时间、提前提醒分钟数
-- 📱 **紧急联系人** — 超时未签到时，自动发送短信通知紧急联系人
+- 📱 **紧急联系人** — 超时未签到时，**自动发送短信**通知紧急联系人（无需手动确认）
 - 🎨 **暗黑主题** — 全局深色UI，夜间使用更舒适
 
 ## 📸 界面预览
@@ -97,8 +97,10 @@ ZaiMa/
 ## ⚠️ 注意事项
 
 - Release APK（48MB）已内置 JS Bundle，可独立运行，无需连接开发服务器
-- 推送通知功能使用应用内 Alert 实现，如需系统级推送通知，可集成 `@notifee/react-native`
-- 紧急联系人短信通过系统短信应用发送，需要用户手动确认发送
+- 推送提醒功能使用应用内 Alert 实现，如需系统级推送通知，可集成推送 SDK
+- **紧急短信自动发送**：使用 Android SmsManager 后台静默发送，无需用户点击确认
+- 需要授权「短信发送权限」（SEND_SMS），首次打开时会自动请求
+- 长短信会自动拆分发送（支持 multipart SMS）
 
 ## 📄 许可证
 
