@@ -6,7 +6,7 @@
 
 ## 📥 下载安装
 
-[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.0-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.0/ZaiMa-release.apk)
+[![下载 APK](https://img.shields.io/badge/下载-在吗%20v1.0.1-red?style=for-the-badge&logo=android)](https://github.com/xuebadi/ZaiMa/releases/download/v1.0.1/ZaiMa-v1.0.1-release.apk)
 
 > Android 7.0+ | 48MB | 无需连接开发服务器
 
