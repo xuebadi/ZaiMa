@@ -98,7 +98,7 @@ ZaiMa/
 
 - Release APK（48MB）已内置 JS Bundle，可独立运行，无需连接开发服务器
 - 推送提醒功能使用应用内 Alert 实现，如需系统级推送通知，可集成推送 SDK
-- **紧急短信自动发送**：使用 Android SmsManager 后台静默发送，无需用户点击确认
+- **紧急短信自动发送**：使用 Android SmsManager 后台静默发送
 - 需要授权「短信发送权限」（SEND_SMS），首次打开时会自动请求
 - 长短信会自动拆分发送（支持 multipart SMS）
 
